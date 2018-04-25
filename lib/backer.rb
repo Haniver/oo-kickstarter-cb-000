@@ -6,8 +6,8 @@ class Backer
     @backed_projects = []
   end
 
-  def back_project(title)
-    self.backed_projects << Project.retrieve_or_create_by_title(title)
+  def back_project(project)
+    self.backed_projects << project
   end
 
 end
