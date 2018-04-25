@@ -9,6 +9,7 @@ class Project
 
   def add_backer(backer)
     self.backers << backer
+    backer.backed_projects << self
   end
 
   def retrieve_or_create_by_title(title)
